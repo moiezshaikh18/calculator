@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #313435;
+  padding: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 500px;
+  background-color: black;
+  padding: 20px;
+  margin: auto;
+  border-radius: 25px;
+}
+
+.input-div {
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(90, 90, 90);
+  width: 500px;
+  margin: 10px;
+}
+
+input {
+  text-align: end;
+  font-size: 80px;
+  border: none;
+  outline: none;
+  padding: 0px;
+  margin: 0px;
+  height: 80px;
+  width: 500px;
+  background-color: rgb(90, 90, 90);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.keypad-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  outline: none;
+  border: none;
+  text-align: center;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(90, 90, 90);
+  border-radius: 50%;
+}
+
+#equal {
+  background-color: red;
+}
+
+#calc {
+  pointer-events: none;
 }
