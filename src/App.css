@@ -21,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: rgb(90, 90, 90);
+  background-color: rgb(0, 0, 0);
   width: 500px;
   margin: 10px;
 }
@@ -35,7 +35,7 @@ input {
   margin: 0px;
   height: 80px;
   width: 500px;
-  background-color: rgb(90, 90, 90);
+  background-color: rgb(3, 3, 3);
   color: white;
 }
 
@@ -54,21 +54,33 @@ input {
   border: none;
   text-align: center;
   padding: 5px;
-  background-color: black;
-  color: white;
+  background-color: rgba(94, 90, 90, 0.404);
   border-radius: 50%;
+  color: white;
   margin: 5px;
   cursor: pointer;
+  font-weight: 700;
 }
 .btn:hover {
   background-color: rgb(90, 90, 90);
   border-radius: 50%;
 }
 
-#equal {
-  background-color: red;
+#equal,
+#div,
+#mul,
+#min,
+#add {
+  background-color: rgb(255, 161, 53);
 }
 
 #calc {
   pointer-events: none;
+}
+
+#AC,
+#del,
+#per {
+  background-color: rgb(173, 169, 169);
+  color: black;
 }
